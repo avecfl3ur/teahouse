@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+@font-face {
+    font-family: 'NewIconSerif';
+    src: url('https://www.dl.dropboxusercontent.com/scl/fi/vm3omtok5cszftd0ljh1r/New-Icon-Serif-condensed.otf?rlkey=0cbrrm4vo7vzz094ktidyucpu') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Amoresa';
+    src: url('https://www.dl.dropboxusercontent.com/scl/fi/p5xba20e5oj69o4u3dcg4/Amoresa.ttf?rlkey=w4sajssb4ocwp4pagli0nrcry&dl=0') format('truetype');
+  }
+
+  :root {
+      --bgt-bg: #fff;
+      --bgt-maincl: #e18aaa;
+      --bgt-tt: #e4a0b7;
+      --bgt-txt: #000;
+  }
+
+.bgt-wrap {
+  width: 500px;
+  padding: 20px 60px 60px;
+  border: 1px solid var(--bgt-maincl);
+  background: var(--bgt-bg);
+  color: var(--bgt-maincl);
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  font-family: 'Amoresa', cursive;
+  margin: 40px auto;
+}
+
+.bgt-ribbon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url('https://iili.io/3PTT3MP.png') no-repeat center/contain;
+}
+
+.bgt-rib-tl { top: 10px; left: 10px; transform: rotate(180deg); }
+.bgt-rib-tr { top: 10px; right: 10px; transform: rotate(270deg); }
+.bgt-rib-bl { bottom: 10px; left: 10px; transform: rotate(90deg); }
+.bgt-rib-br { bottom: 10px; right: 10px; transform: rotate(0deg); }
+
+.bgt-title {
+  text-align: center;
+  font-size: 44px;
+  color: var(--bgt-tt);
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-family: 'Amoresa', cursive;
+}
+
+.bgt-sub,
+.bgt-info,
+.bgt-pay,
+.bgt-note {
+  font-family: 'NewIconSerif', serif;
+  font-size: 20px;
+}
+
+.bgt-sub {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.bgt-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  border-top: 1px solid var(--bgt-maincl);
+  border-bottom: 1px solid var(--bgt-maincl);
+  padding: 5px 0;
+}
+
+.bgt-text {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 16px;
+  color: var(--bgt-txt);
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.bgt-pay {
+  display: flex;
+  justify-content: space-around;
+  margin: 16px 0;
+}
+
+.bgt-note {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .bgt-wrap {
+      width: 90%;
+      padding: 16px 20px 40px;
+      font-size: 16px;
+  }
+
+  .bgt-title {
+      font-size: 32px;
+  }
+
+  .bgt-sub,
+  .bgt-info,
+  .bgt-pay,
+  .bgt-note {
+      font-size: 16px;
+  }
+
+  .bgt-text {
+      font-size: 14px;
+  }
+
+  .bgt-ribbon {
+      width: 60px;
+      height: 60px;
+  }
+}
+
