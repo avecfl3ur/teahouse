@@ -93,9 +93,9 @@
 
 .porce-img {
     width: 100%;
+    aspect-ratio: 1/1;
     flex: 1;
     background-size: cover;
-    background-position: center;
     margin-bottom: 10px;
 }
 
