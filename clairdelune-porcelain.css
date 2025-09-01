@@ -54,16 +54,12 @@
 }
 
 .porce-grid {
-    max-width: 900px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--porce-scdr);
-    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .porce-grid2 {
@@ -79,17 +75,13 @@
 }
 
 .porce-card {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    border: 1px solid var(--porce-maincl);
-    padding: 20px 15px 25px;
-    box-sizing: border-box;
-    background: var(--porce-scdr);
-    color: var(--porce-maincl);
-    z-index: 1;
-    flex: 0 0 auto;
+    flex: 0 0 250px;
+    aspect-ratio: 1 / 1;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .porce-card2 {
@@ -120,13 +112,12 @@
 }
 
 .porce-img {
-    width: 200px;
-    height: 200px;
-    margin-top: 10px;
+    width: 100%;
+    flex: 1;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .porce-name {
@@ -149,15 +140,13 @@
 }
 
 @media (max-width: 900px) {
-    .porce-grid {
-        padding: 20px;
-        gap: 15px;
+    .porce-card {
+        flex: 0 0 45%;
     }
+}
 
-    .porce-main,
-    .porce-main2 {
-        padding: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+@media (max-width: 480px) {
+    .porce-card {
+        flex: 0 0 100%;
     }
 }
