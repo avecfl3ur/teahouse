@@ -15,12 +15,15 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--porce-bg);
+    background-color: var(--porce-bg); /* แก้ตรงนี้ให้เป็นพื้นหลังแผ่นเดียว */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-height: 100%;
+}
+
+.porce-main2 {
+    background: none;
 }
 
 .porce-logo {
@@ -96,16 +99,6 @@
     background-position: center;
     border-radius: 8px;
     margin-bottom: 10px;
-}
-
-.porce-name {
-    font-family: 'Rollston', sans-serif;
-    text-transform: lowercase;
-    font-size: 26px;
-    text-align: center;
-    color: var(--porce-maincl);
-    margin-top: 15px;
-    margin-bottom: 0.5rem;
 }
 
 .porce-dsc {
