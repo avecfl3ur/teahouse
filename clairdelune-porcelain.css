@@ -92,9 +92,11 @@
 
 .porce-img {
     width: 100%;
-    flex: 1;
-    background-size: cover;
+    height: auto;
+    border-radius: 8px; 
     margin-bottom: 10px;
+    display: block;
+    object-fit: unset;
 }
 
 .porce-dsc {
