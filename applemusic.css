@@ -1,0 +1,270 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+:root {
+    --apple-maincl: #fff;
+    --apple-scdr: #f1f1f1;
+    --apple-iconcl: #444;
+}
+
+.apple-main {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #000;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.apple-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.apple-bari {
+    color: #ff375f;
+}
+
+.apple-profile {
+    padding: 20px;
+    text-align: center;
+}
+
+.apple-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.apple-tt {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 4px;
+}
+
+.apple-btn {
+    padding:  8px 16px;
+    margin-top: 15px;
+    background: #ff375f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.apple-pl,
+.apple-flw {
+    padding: 20px;
+}
+
+.apple-pl2,
+.apple-flw2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.apple-plgrid {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.apple-plitem {
+    width: 150px;
+    text-align: center;
+}
+
+.apple-plimg {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.apple-p {
+    font-size: 15px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.apple-flwl {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.apple-flwit {
+  text-align: center;
+}
+
+.apple-flwimg {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.apple-itp {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.apple-status {
+    margin: 20px auto 0;
+    margin-top: 0;
+    background: #f1f1f1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: system-ui, sans-serif;
+    width: fit-content;
+}
+
+.apple-statusi {
+    color: #333;
+}
+
+.apple-bttm {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+.apple-bttm2 {
+  font-size: 12px;
+  color: #444;
+  text-align: center;
+}
+
+.apple-bttmi {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 2px;
+  color: #444;
+}
+
+.apple-bttm div.active,
+.apple-bttm div.active i {
+  color: #ff375f;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .apple-main {
+    padding: 0 10px;
+  }
+
+  .apple-bar {
+    padding: 10px 15px 0;
+    font-size: 16px;
+  }
+
+  .apple-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .apple-tt {
+    font-size: 20px;
+  }
+
+  .apple-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .apple-plitem {
+    width: 100px;
+  }
+
+  .apple-flwimg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .apple-flwl {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .apple-status {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .apple-bttm {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    align-items: center;
+  }
+
+  .apple-bttm div {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .apple-main {
+    padding: 0 20px;
+  }
+
+  .apple-bar {
+    font-size: 17px;
+  }
+
+  .apple-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .apple-tt {
+    font-size: 22px;
+  }
+
+  .apple-btn {
+    font-size: 13.5px;
+  }
+
+  .apple-plitem {
+    width: 130px;
+  }
+
+  .apple-flwimg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .apple-status {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  .apple-bttm {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .apple-bttm div {
+    font-size: 13px;
+  }
+}
