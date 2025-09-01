@@ -6,88 +6,90 @@
     --porce-maincl: #000;
     --porce-scdr: #fff;
     --porce-pcs: url(https://i.imgur.com/Ml97cg8.png) center/cover no-repeat;
+    --porce-flower: url(https://i.imgur.com/gw3Y5MZ.png) center/cover no-repeat;
     --porce-logo: url(https://i.imgur.com/dWcmvon.png);
 }
 
 .porce-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: var(--porce-bg);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--porce-bg);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* ระยะห่างเท่ากัน */
 }
 
 .porce-logo {
-  width: 150px;
-  height: 150px;
-  background-image: var(--porce-logo);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0 auto;
-}
-
-.porce-grid {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.porce-card,
-.porce-card2 {
-  width: auto;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: var(--porce-scdr);
-  border: 1px solid var(--porce-maincl);
-}
-
-.porce-card img.porce-img {
-    width: auto;
-    max-width: 250px;
-    height: auto;
-    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: var(--porce-logo);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0 auto;
 }
 
-.porce-card2 {
-  flex: 1;
-  max-width: 350px;
+.porce-top-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.porce-img {
+.porce-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.porce-card img.porce-img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
     display: block;
+    border-radius: 8px;
+}
+
+.porce-card2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--porce-scdr);
+    border: 1px solid var(--porce-maincl);
+    border-radius: 12px;
+}
+
+.porce-code {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: var(--porce-scdr);
+    border: 1px solid var(--porce-maincl);
+    border-radius: 12px;
+}
+
+.porce-name {
+    font-family: 'Rollston', sans-serif;
+    text-transform: lowercase;
+    font-size: 26px;
+    text-align: center;
+    color: var(--porce-maincl);
+    margin-top: 15px;
+    margin-bottom: 0.5rem;
 }
 
 .porce-dsc {
-  font-family: 'Noto Sans Thai Looped', sans-serif;
-  font-size: 16px;
-  color: var(--porce-maincl);
+    font-size: 16px;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    color: var(--porce-maincl);
+    text-align: center;
+    margin: 0;
 }
 
 @media (max-width: 900px) {
-    .porce-card {
-        flex: 0 1 45%;
-    }
-    .porce-card2 {
-        flex: 0 1 100%;
-        padding: 30px 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .porce-card {
-        flex: 0 1 100%;
-    }
-    .porce-card2 {
-        flex: 0 1 100%;
-        padding: 20px 10px 15px;
+    .porce-top-grid {
+        grid-template-columns: 1fr;
     }
 }
