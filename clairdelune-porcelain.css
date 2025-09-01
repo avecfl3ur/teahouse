@@ -57,7 +57,6 @@
     box-sizing: border-box;
     background-color: var(--porce-scdr);
     border: 1px solid var(--porce-maincl);
-    border-radius: 12px;
 }
 
 .porce-code {
@@ -66,7 +65,6 @@
     box-sizing: border-box;
     background-color: var(--porce-scdr);
     border: 1px solid var(--porce-maincl);
-    border-radius: 12px;
 }
 
 .porce-name {
