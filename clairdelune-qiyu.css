@@ -1,17 +1,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
-
-@font-face {
-    font-family: 'iannnnn-HEN';
-    src: url("https://dl.dropboxusercontent.com/scl/fi/gipozz0cs3jfcbe6pu9ha/iannnnn-HEN-Regular.ttf?rlkey=qlpw5cu0mp5w2gxc3opyn1a8p&st=7pcxevba") format("truetype");
-    font-weight: normal;
-  }
-
-  @font-face {
-    font-family: 'iannnnn-HEN';
-    src: url('https://dl.dropboxusercontent.com/scl/fi/tnh973031l7ftk66nkcsy/iannnnn-HEN-Bold.ttf?rlkey=lwbjux0576c4gaaa1gy2poxw0&st=vsg46nsu') format('truetype');
-    font-weight: bold;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
 
   :root {
     --qiyu-maincl: #fff;
@@ -52,7 +41,7 @@
     border: 1px solid var(--qiyu-icon);
     border-radius: 30px;
     font-size: 18px;
-    font-family: 'iannnnn-HEN', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
     color: var(--qiyu-srch);
     outline: none;
     box-sizing: border-box;
@@ -104,7 +93,7 @@
 }
 
 .qiyu-textbox {
-    font-family: 'iannnnn-HEN', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
     font-size: 18px;
     color: var(--qiyu-text);
     background: var(--qiyu-box);
@@ -154,7 +143,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: 'iannnnn-HEN', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
     font-weight: bold;
     color: var(--qiyu-srch);
     width: 250px;
