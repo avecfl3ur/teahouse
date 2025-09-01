@@ -1,0 +1,229 @@
+@import url('https://fonts.cdnfonts.com/css/rollston');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+  
+:root {
+    --mdl-maincl: #000;
+    --mdl-cl: #86a96f;
+    --mdl-cc: #b1cba6;
+    --mdl-cc2: #ffee8c;
+    --mdl-p1: url(https://i.imgur.com/Ml97cg8.png) center/cover no-repeat;
+    --mdl-p2: url(https://i.imgur.com/fBvQDLi.png) center/cover no-repeat;
+    --mdl-p3: url(https://i.imgur.com/Gj0M7k8.png) center/cover no-repeat;
+    --mdl-pfp: url(https://i.imgur.com/WVtQfq6.jpeg) center/cover no-repeat;
+}
+
+
+.mdl-main {
+    max-width: 700px;
+    background: #9a1900;
+    padding: 30px 30px;
+    border: 1px solid var(--mdl-maincl);
+    text-align: center;
+    font-family: 'Rollston', sans-serif;
+    color: var(--mdl-maincl);
+    margin: 0 auto 0;
+}
+
+
+.mdl-hd {
+    position: relative;
+    display: inline-block;
+    font-family: 'Rollston', sans-serif;
+    font-size: 30px;
+    z-index: 1;
+    padding: 0 15px;
+    color: var(--mdl-cl);
+}
+
+
+.mdl-hd::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 120%;
+    background-color: #fff8f0;
+    border-radius: 100%;
+    border: 1px solid var(--mdl-maincl);
+    z-index: -1;
+}
+
+
+.mdl-hd1 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+}
+
+
+.mdl-grid {
+    max-width: 700px;
+    background-color: #fff8f0;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--mdl-maincl);
+}
+
+
+.mdl-grid2 {
+    max-width: 700px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.mdl-card {
+    position: relative;
+    width: 200px;
+    border: 1px solid var(--mdl-maincl);
+    padding: 20px 15px 25px;
+    box-sizing: border-box;
+    background: #fff;
+    color: var(--mdl-maincl);
+}
+
+
+.mdl-card2 {
+    position: relative;
+    width: 400px;
+    border: 1px solid var(--mdl-maincl);
+    padding: 20px 15px 35px;
+    box-sizing: border-box;
+    background: #fff;
+    color: var(--mdl-maincl);
+}
+
+
+.mdl-cct,
+.mdl-cct2 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--mdl-maincl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rollston', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.mdl-cct {
+    background-color: var(--mdl-cc);
+}
+
+
+.mdl-cct2 {
+    background-color: var(--mdl-cc2);
+}
+
+
+.mdl-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--mdl-maincl);
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.mdl-img2 {
+    width: 100%;
+    height: 80%;
+    border: 1px solid var(--mdl-maincl);
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.mdl-name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Rollston', sans-serif;
+    text-transform: lowercase;
+    font-size: 20px;
+    text-align: center;
+    color: var(--mdl-maincl);
+}
+
+
+.mdl-dsc1,
+.mdl-dsc2,
+.mdl-dsc3 {
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    color: var(--mdl-maincl);
+}
+
+
+.mdl-dsc1 {
+    max-height: 300px;
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+
+.mdl-dsc2 {
+    max-height: 150px;
+    font-size: 14px;
+    margin: 10px;
+    text-align: justify;
+    overflow-y: auto;
+}
+
+
+.mdl-dsc3 {
+    max-height: 150px;
+    font-size: 14px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+
+.mdl-txt {
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fefaf9;
+    border: 1px solid var(--mdl-maincl);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mdl-title {
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    color: #000;
+}
+
+
+@media screen and (max-width: 600px) {
+    .mdl-card {
+        width: 100px;
+    }
+}
