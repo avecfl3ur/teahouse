@@ -13,7 +13,7 @@
 .porce-main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 50px;
+    margin: 70px;
     background-color: var(--porce-bg);
     box-sizing: border-box;
     display: flex;
