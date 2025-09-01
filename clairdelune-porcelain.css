@@ -5,84 +5,68 @@
     --porce-bg: #f2dfdf;
     --porce-maincl: #000;
     --porce-scdr: #fff;
-    --porce-pcs: url(https://i.imgur.com/Ml97cg8.png) center/cover no-repeat;
-    --porce-flower: url(https://i.imgur.com/gw3Y5MZ.png) center/cover no-repeat;
     --porce-logo: url(https://i.imgur.com/dWcmvon.png);
 }
 
 .porce-main {
-    max-width: 900px;
-    margin: 0 auto;
-    margin: 70px;
-    background-color: var(--porce-bg);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--porce-bg);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .porce-logo {
-    width: 150px;
-    height: 150px;
-    background-image: var(--porce-logo);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background-image: var(--porce-logo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 20px;
 }
 
 .porce-top-grid {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
 }
 
-.porce-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.porce-card,
+.porce-card2,
+.porce-code-box {
+  border: 1px solid var(--porce-maincl);
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: var(--porce-scdr);
 }
 
 .porce-card img.porce-img {
-    width: 250px;
-    height: auto;
-    display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
-.porce-card2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: var(--porce-scdr);
-    border: 1px solid var(--porce-maincl);
+.porce-card .porce-dsc {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Noto Sans Thai Looped', sans-serif;
+  color: var(--porce-maincl);
 }
 
-.porce-code {
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    background-color: var(--porce-scdr);
-    border: 1px solid var(--porce-maincl);
+.porce-code-box {
+  grid-column: 1 / -1;
+  white-space: pre-wrap;
+  font-family: monospace;
 }
 
-.porce-name {
-    font-family: 'Rollston', sans-serif;
-    text-transform: lowercase;
-    font-size: 26px;
-    text-align: center;
-    color: var(--porce-maincl);
-    margin-top: 15px;
-    margin-bottom: 0.5rem;
-}
-
-.porce-dsc {
-    font-size: 16px;
-    font-family: 'Noto Sans Thai Looped', sans-serif;
-    color: var(--porce-maincl);
-    text-align: center;
-    margin: 0;
+.porce-card2 .porce-dsc {
+  font-family: 'Noto Sans Thai Looped', sans-serif;
+  color: var(--porce-maincl);
 }
 
 @media (max-width: 900px) {
