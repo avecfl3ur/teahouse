@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/pandantica');
+@import url('https://fonts.cdnfonts.com/css/rollston');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+
+:root {
+    --mochi-main: #333;
+    --mochi-bg: #fffef8;
+    --mochi-sub: #777;
+    --mochi-hd: url(https://i.imgur.com/pF155pW.png) center/cover no-repeat;
+    --mochi-p1: url(https://iili.io/FwAdi2s.jpg) center/cover no-repeat;
+    --mochi-p2: url(https://iili.io/FwAd4EX.jpg) center/cover no-repeat;
+    --mochi-p3: url(https://iili.io/FwAdrBt.jpg) center/cover no-repeat;
+  }
+
+.mochi-card {
+  max-width: 600px;
+  width: 100%;
+  background: var(--mochi-bg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 3px solid #fff;
+  margin: 20px auto 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.mochi-header, .mochi-footer {
+  width: 100%;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.mochi-title {
+  font-family: 'Rollston', sans-serif;
+  font-size: 32px;
+  margin: 50px 48px 5px;
+  text-align: center;
+  color: var(--mochi-main);
+}
+
+.mochi-subtitle {
+  font-family: 'Pandantica', sans-serif;
+  font-size: 16px;
+  color: var(--mochi-sub);
+  margin: 0 48px 16px;
+  text-align: center;
+}
+
+.mochi-main {
+  padding: 0 80px 50px;
+  text-align: justify;
+  font-family: 'Noto Sans Thai Looped', sans-serif;
+  font-size: 14px;
+  color: var(--mochi-main);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.mochi-textbox {
+  width: 100%;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.mochi-textbox-footer {
+  border-top: 1px dashed var(--mochi-main);
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--mochi-sub);
+  text-align: center;
+  user-select: text;
+}
+
+.mochi-img {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.mochi-imgrow {
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border: 7px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 640px) {
+  .mochi-title {
+      margin: 80px 20px 5px;
+  }
+
+  .mochi-subtitle {
+      margin: 0 20px 16px;
+  }
+
+  .mochi-main {
+      padding: 0 20px 32px;
+  }
+  
+  .mochi-img {
+      gap: 6px;
+  }
+  
+  .mochi-imgrow {
+      width: 80px;
+  }
+}
