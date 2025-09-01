@@ -1,0 +1,259 @@
+@import url('https://fonts.cdnfonts.com/css/breezy-pro');
+@import url('https://fonts.cdnfonts.com/css/meliodash');
+
+:root {
+    --djl-cl: #fff;
+    --djl-txt: #000;
+    --djl-dot: rgba(0, 0, 0, 0.4);
+    --djl-dot2: rgba(0, 51, 204, 0.4);
+    --djl-pbg: url(https://iili.io/FHzJRHl.jpg) center/cover no-repeat;
+    --djl-p1: url(https://iili.io/FHnuvRe.png) center/cover no-repeat;
+    --djl-p2: url(https://iili.io/FHnYF44.png) center/cover no-repeat;
+    --djl-p3: url(https://iili.io/FHnYF44.png) center/cover no-repeat;
+    --djl-p4: url(https://iili.io/FHnuvRe.png) center/cover no-repeat;
+}
+
+.djl-main {
+margin: 0;
+font-family: 'Meliodash', sans-serif;
+background: var(--djl-cl);
+color: var(--djl-txt);
+display: flex;
+justify-content: center;
+}
+
+.djl-bg {
+width: 700px;
+height: 1200px;
+position: relative;
+overflow: hidden;
+}
+
+.djl-bg::before,
+.djl-bg::after {
+content: "";
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+z-index: 0;
+}
+
+.djl-bg::before {
+background: var(--djl-pbg);
+filter: grayscale(100%);
+}
+
+.djl-bg::after {
+background-image: radial-gradient(circle, var(--djl-dot) 1px, transparent 1px);
+background-size: 3px 3px;
+mix-blend-mode: overlay;
+pointer-events: none;
+}
+
+.djl-scdr {
+width: 100%;
+padding: 200px 20px;
+box-sizing: border-box;
+position: relative;
+z-index: 2;
+}
+
+.djl-title {
+text-align: center;
+font-size: 70px;
+line-height: 1.2;
+color: var(--djl-cl);
+-webkit-text-stroke: 0.3px var(--djl-txt);
+}
+
+.djl-title span {
+font-family: 'Breezy Pro', sans-serif;
+font-size: 80px;
+}
+
+.djl-pic {
+margin: 60px auto 0;
+width: 320px;
+height: 380px;
+display: grid;
+grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+gap: 5px;
+border: 5px solid #fff;
+background: #fff;
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+outline: 0.5px solid #000;
+transform: rotate(5deg);
+position: relative;
+z-index: 2;
+}
+
+.djl-pics {
+position: relative;
+overflow: hidden;
+}
+
+.djl-pimg {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.djl-pic::after {
+content: "";
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background-image: radial-gradient(circle, var(--djl-dot2) 0.5px, transparent 0.5px);
+background-size: 2px 2px;
+mix-blend-mode: overlay;
+pointer-events: none;
+z-index: 1;
+}
+
+.djl-ovl {
+position: absolute;
+top: 33%;
+left: 45%;
+width: 100px;
+object-fit: contain;
+transform: rotate(7deg);
+pointer-events: none;
+z-index: 5;
+}
+
+.djl-ovl2 {
+position: absolute;
+top: 69.5%;
+left: 21.5%;
+width: 60px;
+object-fit: contain;
+transform: rotate(15deg);
+pointer-events: none;
+z-index: 5;
+}
+
+.djl-ovl3 {
+position: absolute;
+top: 58.5%;
+left: 31.3%;
+width: 95px;
+object-fit: contain;
+transform: rotate(10deg);
+pointer-events: none;
+z-index: 5;
+}
+
+.djl-ovl4 {
+position: absolute;
+top: 50%;
+left: 67%;
+width: 38px;
+object-fit: contain;
+transform: rotate(30deg);
+pointer-events: none;
+z-index: 5;
+}
+
+.djl-tt {
+position: absolute;
+background: #fff;
+border: 0.5px solid #000;
+padding: 7px 15px;
+font-family: 'Meliodash', sans-serif;
+font-size: 16px;
+color: var(--djl-txt);
+text-align: center;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+z-index: 6;
+}
+
+.djl-txt1 {
+bottom: 400px;
+left: 150px;
+transform: rotate(-7deg);
+}
+
+.djl-txt2 {
+bottom: 220px;
+left: 430px;
+transform: rotate(13deg);
+}
+
+.djl-elps {
+width: 180px;
+height: 50px;
+border: 1px solid var(--djl-cl);
+border-radius: 50%;
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+}
+
+.djl-ms {
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family: 'Breezy Pro', sans-serif;
+font-size: 20px;
+color: var(--djl-cl);
+background: none;
+z-index: 2;
+}
+
+@media (max-width: 480px) {
+.djl-bg { width: 100vw; height: auto; }
+.djl-scdr { padding: 100px 10px; }
+.djl-title { font-size: 40px; }
+.djl-title span { font-size: 48px; }
+
+.djl-pic {
+  width: 90vw;
+  height: auto;
+  grid-template-rows: auto auto;
+  margin-top: 40px;
+  gap: 4px;
+}
+
+.djl-pics { height: 45vw; }
+
+.djl-tt {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.djl-txt1 {
+  bottom: 25%;
+  left: 55%;
+  transform: rotate(-5deg);
+}
+
+.djl-txt2 {
+  bottom: 22%;
+  left: 52%;
+  transform: rotate(3deg);
+}
+
+.djl-ovl {
+  width: 60px;
+  transform: rotate(7deg) scale(0.8);
+}
+
+.djl-ovl2 {
+  width: 40px;
+  transform: rotate(15deg) scale(0.8);
+}
+
+.djl-ovl3 {
+  width: 65px;
+  transform: rotate(10deg) scale(0.8);
+}
+
+.djl-ovl4 {
+  width: 28px;
+  transform: rotate(30deg) scale(0.8);
+}
+}
