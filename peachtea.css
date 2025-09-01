@@ -1,0 +1,119 @@
+@import url('https://fonts.cdnfonts.com/css/rollston');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+
+:root {
+    --pt-bg: #fefaf9;
+    --pt-col: #000;
+    --pt-txt: #000;
+    --pt-box: #9a1900;
+    --pt-gap: 20px;
+    --pt-rd: 30px;
+    --pt-p1: url(https://i.imgur.com/XDwbzmx.jpeg) center/cover no-repeat;
+    --pt-p2: url(https://i.imgur.com/cvfwEWx.jpeg) center/cover no-repeat;
+    --pt-p3: url(https://i.imgur.com/IMN6Pon.jpeg) center/cover no-repeat;
+    --pt-p4: url(https://i.imgur.com/iMJ7BTy.jpeg) center/cover no-repeat;
+}
+
+.pt-cup {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: var(--pt-bg);
+    border: 1px solid var(--pt-txt);
+    display: flex;
+    flex-direction: column;
+}
+
+.pt-title {
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Rollston', sans-serif;
+    color: var(--pt-col);
+}
+
+.pt-subtitle {
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    color: var(--pt-col);
+}
+
+.pt-text {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.pt-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--pt-gap);
+    margin: 20px 0;
+}
+
+.pt-banner {
+    width: 500px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid var(--pt-txt);
+    background: var(--pt-p1);
+}
+
+.pt-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.pt-icon:hover {
+    transform: translateY(-6px) scale(1.1);
+}
+
+.pt-note {
+    margin: 30px auto 0;
+    padding: 5px 10px;
+    background-color: var(--pt-box);
+    border-radius: var(--pt-rd);
+    border: 1px solid var(--pt-txt);
+    color: #fff;
+    width: fit-content;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    text-align: center;
+}
+
+.pt-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pt-gallery-img {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid var(--pt-txt);
+}
+
+.pt-textblock {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .pt-img-main,
+    .pt-gallery-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pt-gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pt-cup {
+        padding: 30px;
+    }
+}
