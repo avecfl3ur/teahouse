@@ -39,6 +39,7 @@
 
 .porce-card,
 .porce-card2 {
+  width: auto;
   padding: 10px;
   box-sizing: border-box;
   background-color: var(--porce-scdr);
@@ -55,7 +56,7 @@
 
 .porce-card2 {
   flex: 1;
-  min-width: 250px;
+  max-width: 350px;
 }
 
 .porce-img {
