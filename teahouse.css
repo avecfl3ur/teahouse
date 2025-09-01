@@ -1,0 +1,220 @@
+@import url('https://fonts.cdnfonts.com/css/rollston');
+@import url('https://fonts.cdnfonts.com/css/lovely-pretty');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+
+:root {
+    --pcl-bg: #f2dfdf;
+    --pcl-maincl: #000;
+    --pcl-scdr: #fff;
+    --pcl-p1: url(https://i.imgur.com/Ml97cg8.png) center/cover no-repeat;
+    --pcl-p2: url(https://i.imgur.com/fBvQDLi.png) center/cover no-repeat;
+    --pcl-p3: url(https://i.imgur.com/Gj0M7k8.png) center/cover no-repeat;
+    --pcl-logo: url(https://i.imgur.com/dWcmvon.png);
+    --pcl-hd: url(https://i.imgur.com/FRZC3ke.jpeg) center/cover no-repeat;
+}
+
+.pcl-main,
+.pcl-main2 {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    min-height: 60px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.pcl-main {
+    background: linear-gradient(to bottom, #f2dfdf 0%, #ffffff 100%);
+}
+
+.pcl-main2 {
+    background: linear-gradient(to top, #f2dfdf 0%, #ffffff 100%);
+}
+
+.pcl-logo {
+  width: 150px;
+  height: 150px;
+  background-image: var(--pcl-logo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px auto 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.pcl-border-decoration {
+  width: 100%;
+  height: 80px;
+  background-image: url(https://i.imgur.com/WiPlDQ7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 376px 188px;
+  margin-top: 0px;
+  z-index: 0;
+}
+
+.pcl-grid {
+    max-width: 900px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--pcl-scdr);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pcl-grid2 {
+    max-width: 900px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pcl-card {
+    position: relative;
+    width: 250px;
+    border: 1px solid var(--pcl-maincl);
+    padding: 20px 15px 25px;
+    box-sizing: border-box;
+    background: var(--pcl-scdr);
+    color: var(--pcl-maincl);
+    z-index: 1;
+}
+
+.pcl-card2 {
+    position: relative;
+    width: 450px;
+    height: auto;
+    min-height: initial;
+    overflow: visible;
+    border: 1px solid var(--pcl-maincl);
+    padding: 20px 15px 35px;
+    box-sizing: border-box;
+    background: var(--pcl-scdr);
+    color: var(--pcl-maincl);
+}
+
+.pcl-cct,
+.pcl-cct2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Rollston', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px var(--pcl-maincl);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.pcl-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pcl-img2 {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pcl-name {
+    margin-top: 15px;
+    margin-bottom: 0.5rem;
+    font-family: 'Rollston', sans-serif;
+    text-transform: lowercase;
+    font-size: 26px;
+    text-align: center;
+    color: var(--pcl-maincl);
+}
+
+.pcl-name2 {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  transform: rotate(-7deg);
+  font-family: 'Lovely Pretty', sans-serif;
+  font-size: 50px;
+  color: var(--pcl-maincl);
+  z-index: 1;
+  padding: 5px 10px;
+  text-align: right;
+}
+
+.pcl-dsc1,
+.pcl-dsc2,
+.pcl-dsc3 {
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    color: var(--pcl-maincl);
+}
+
+.pcl-dsc1 {
+    max-height: 300px;
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.pcl-dsc2 {
+    max-height: 150px;
+    font-size: 14px;
+    margin: 10px;
+    text-align: justify;
+    overflow-y: auto;
+}
+
+.pcl-dsc3 {
+    max-height: 150px;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.pcl-txt {
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff8f0;
+    border: 1px solid var(--pcl-maincl);
+    display: flex;
+    flex-direction: column;
+}
+
+.pcl-title {
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    color: #000;
+}
+  
+@media (max-width: 900px) {
+    .pcl-grid {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .pcl-main,
+    .pcl-main2 {
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
