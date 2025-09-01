@@ -1,0 +1,121 @@
+@import url('https://fonts.cdnfonts.com/css/rollston');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+
+:root {
+    --at-bg: #fefaf9;
+    --at-maincl: #000;
+    --at-box: #86a96f;
+    --at-gap: 20px;
+    --at-p1: url(https://i.imgur.com/XDwbzmx.jpeg) center/cover no-repeat;
+    --at-p2: url(https://i.imgur.com/cvfwEWx.jpeg) center/cover no-repeat;
+}
+
+.at-main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: var(--at-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.at-layout {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--at-bg);
+    border: 1px solid var(--at-maincl);
+    padding: 50px;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+
+.at-txt {
+    width: 60%;
+    padding-right: 40px;
+    color: var(--at-maincl);
+    max-height: 500px;
+}
+
+.at-title {
+    font-size: 36px;
+    font-family: 'Rollston', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+  
+.at-sub {
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0;
+}
+
+.at-txtp {
+    max-height: 320px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: justify;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.at-note {
+    margin: 30px auto 0;
+    transform: translateY(15px);
+    padding: 5px 10px;
+    background-color: var(--at-box);
+    border-radius: 30px;
+    border: 1px solid var(--at-maincl);
+    color: #fff;
+    width: fit-content;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    text-align: center;
+}
+
+.at-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    width: 35%;
+}
+
+.at-long,
+.at-square {
+    width: 100%;
+    border: 1px solid var(--at-maincl);
+    background-size: cover;
+    background-position: center;
+}
+
+.at-long {
+    height: 300px;
+}
+
+.at-square {
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 600px) {
+    .at-title {
+        font-size: 28px;
+    }
+
+    .at-sub {
+        font-size: 18px;
+    }
+
+    .at-layout {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .at-images {
+        width: 100%;
+    }
+}
