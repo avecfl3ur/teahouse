@@ -16,7 +16,6 @@
 .djl-main {
 margin: 0;
 font-family: 'Meliodash', sans-serif;
-background: var(--djl-cl);
 color: var(--djl-txt);
 display: flex;
 justify-content: center;
