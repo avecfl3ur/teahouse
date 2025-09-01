@@ -16,7 +16,7 @@
   background-color: var(--porce-bg);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   box-sizing: border-box;
 }
 
