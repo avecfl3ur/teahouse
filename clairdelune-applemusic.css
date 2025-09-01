@@ -48,6 +48,7 @@
 }
 
 .apple-btn {
+    display: inline-block;
     padding:  8px 16px;
     margin-top: 15px;
     background: #ff375f;
