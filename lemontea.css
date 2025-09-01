@@ -1,0 +1,147 @@
+@import url('https://fonts.cdnfonts.com/css/two-turtle-doves');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+
+:root {
+    --lemon-bg: #fefaf9;
+    --lemon-mcl: #5a4633;
+    --lemon-tcl: #9b0000;
+}
+
+.lemon-main {
+    background: var(--lemon-bg);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 600px;
+    min-height: 80vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 0;
+    position: relative;
+}
+
+.lemon-text {
+    width: 55%;
+    text-align: left;
+    z-index: 1;
+    margin-left: 30px;
+    margin-top: 30px; 
+    margin-bottom: 5px;
+}
+
+.lemon-title {
+    font-family: 'Two Turtle Doves', sans-serif;
+    font-size: 36px;
+    color: var(--lemon-tcl);
+    text-align: center;
+}
+
+.lemon-txt,
+.lemon-txt2 {
+    height: 300px;
+    padding-top: 20px;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-size: 16px;
+    color: var(--lemon-mcl);
+    line-height: 1.3;
+}
+
+.lemon-txt {
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.lemon-txt2 {
+    text-align: center;
+}
+
+.lemon-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+    align-items: flex-start;
+    margin-top: 20px;
+    z-index: 3;
+    flex-wrap: wrap;
+}
+
+.lemon-image,
+.lemon-image2 {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.lemon-image {
+    transform: rotate(-5deg);
+}
+
+.lemon-image2 {
+    transform: rotate(5deg);
+}
+
+.lemon-photo,
+.lemon-photo2 {
+    position: absolute;
+    bottom: 13%;
+    right: 16%;
+    width: 67%;
+    height: 75%;
+    display: block;
+    object-fit: cover;
+}
+
+.lemon-stamp,
+.lemon-stamp2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.lemon-ft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.lemon-ftimg {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .lemon-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .lemon-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .lemon-images {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .lemon-image,
+    .lemon-image2 {
+        height: 250px;
+    }
+}
