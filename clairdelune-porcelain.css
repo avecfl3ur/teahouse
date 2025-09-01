@@ -10,84 +10,51 @@
 }
 
 .porce-main {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--porce-bg); /* แก้ตรงนี้ให้เป็นพื้นหลังแผ่นเดียว */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.porce-main2 {
-    background: none;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--porce-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
 }
 
 .porce-logo {
-    width: 150px;
-    height: 150px;
-    background-image: var(--porce-logo);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
+  background-image: var(--porce-logo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
 
-.porce-name {
-    font-family: 'Rollston', sans-serif;
-    text-transform: lowercase;
-    font-size: 26px;
-    text-align: center;
-    color: var(--porce-maincl);
-    margin-top: 15px;
-    margin-bottom: 0.5rem;
+.porce-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.porce-grid,
-.porce-grid2,
-.porce-grid3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
+.porce-card,
+.porce-card2 {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--porce-scdr);
+  border: 1px solid var(--porce-maincl);
 }
 
-.porce-card {
-    flex: 0 1 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    box-sizing: border-box;
-    background-color: var(--porce-scdr);
-    border: 1px solid var(--porce-maincl);
+.porce-card img.porce-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .porce-card2 {
-    flex: 0 1 500px;
-    display: flex;
-    flex-direction: column;
-    padding: 60px 15px 35px;
-    background-color: var(--porce-scdr);
-    border: 1px solid var(--porce-maincl);
-    box-sizing: border-box;
-}
-
-.porce-cct {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-family: 'Rollston', sans-serif;
-    font-weight: lighter;
-    font-size: 40px;
-    color: transparent;
-    -webkit-text-stroke: 0.5px var(--porce-maincl);
-    z-index: 1;
-    margin-bottom: 10px;
-    pointer-events: none;
+  flex: 1;
+  min-width: 250px;
 }
 
 .porce-img {
@@ -98,11 +65,9 @@
 }
 
 .porce-dsc {
-    font-size: 16px;
-    font-family: 'Noto Sans Thai Looped', sans-serif;
-    color: var(--porce-maincl);
-    padding: 0 10px;
-    margin: 0;
+  font-family: 'Noto Sans Thai Looped', sans-serif;
+  font-size: 16px;
+  color: var(--porce-maincl);
 }
 
 @media (max-width: 900px) {
