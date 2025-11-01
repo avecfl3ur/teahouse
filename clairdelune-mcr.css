@@ -40,6 +40,7 @@
 .mc-title {
   font-family: 'Rollston', sans-serif;
   font-size: 32px;
+  color: var(--mc-maincl);
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 4px;
