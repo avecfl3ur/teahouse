@@ -69,7 +69,7 @@
 .mc-txt {
   max-height: 330px;
   width: 250px;
-  color: var(--mc-scdr);
+  color: var(--mc-txt);
   flex: 1 1 270px;
   font-size: 14px;
   text-align: justify;
