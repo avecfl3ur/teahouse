@@ -11,6 +11,11 @@
     --mc-p2: url(https://i.imgur.com/k927DcT.jpeg) center/cover no-repeat;
     --mc-p3: url(https://i.imgur.com/tzV24Xy.jpeg) center/cover no-repeat;
     --mc-p4: url(https://i.imgur.com/lOfKnnE.jpeg) center/cover no-repeat;
+    --mc-btn1: #b7d3d3;
+    --mc-btn2: #dbe4d0;
+    --mc-btn3: #f3eac2;
+    --mc-btn4: #e8d1d1;
+    --mc-txt: #555;
   }
 
 .mc-card {
@@ -135,27 +140,23 @@
   cursor: pointer;
   font-family: inherit;
   background: none;
-  color: #555;
+  color: var(--mc-txt);
 }
 
 .mc-1 {
-  background: #b7d3d3;
-  color: #555;
+  background: var(--mc-btn1);
 }
 
 .mc-2 {
-  background: #dbe4d0;
-  color: #555;
+  background: var(--mc-btn2);
 }
 
 .mc-3 {
-  background: #f3eac2;
-  color: #555;
+  background: var(--mc-btn3);
 }
 
 .mc-4 {
-  background: #e8d1d1;
-  color: #555;
+  background: var(--mc-btn4);
 }
 
 @media (max-width: 640px) {
