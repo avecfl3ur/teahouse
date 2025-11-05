@@ -39,7 +39,6 @@
   overflow: hidden;
 }
 
-/* เอียงแบบนิ่ง */
 .cc-box:first-child {
   transform: rotate(-10deg);
   left: 10px;
