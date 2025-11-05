@@ -37,7 +37,6 @@
     border: 7px solid #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     overflow: hidden;
-    transition: transform 0.3s ease;
   }
 
   .cc-box:first-child {
@@ -52,11 +51,6 @@
     left: 110px;
     top: 35px;
     z-index: 2;
-  }
-
-  .cc-box:hover {
-    transform: scale(1.05) rotate(0deg);
-    z-index: 3;
   }
 
   .cc-image {
