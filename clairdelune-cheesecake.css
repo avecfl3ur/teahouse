@@ -7,14 +7,14 @@
     --cc-p2: url(https://i.imgur.com/k927DcT.jpeg) center/cover no-repeat;
   }
 
-  .wrapper {
+  .cc-wrapper {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
     padding: 30px;
   }
 
-  .container {
+  .cc-container {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -24,13 +24,13 @@
     min-height: 180px;
   }
 
-  .image-column {
+  .cc-column {
     position: relative;
     width: 240px;
     height: 160px;
   }
 
-  .image-box {
+  .cc-box {
     position: absolute;
     width: 150px;
     height: 100px;
@@ -40,32 +40,32 @@
     transition: transform 0.3s ease;
   }
 
-  .image-box:first-child {
+  .cc-box:first-child {
     transform: rotate(-10deg);
     left: 10px;
     top: 15px;
     z-index: 1;
   }
 
-  .image-box:last-child {
+  .cc-box:last-child {
     transform: rotate(10deg);
     left: 110px;
     top: 35px;
     z-index: 2;
   }
 
-  .image-box:hover {
+  .cc-box:hover {
     transform: scale(1.05) rotate(0deg);
     z-index: 3;
   }
 
-  .main-image {
+  .cc-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .text-column {
+  .cc-txcl {
     flex: 1;
     padding: 10px 0 10px 20px;
     text-align: left;
@@ -74,14 +74,14 @@
     justify-content: center;
   }
 
-  .main-name {
+  .cc-name {
     font-family: 'Carilo', sans-serif;
     font-size: 28px;
     margin: 0;
     color: var(--cc-maincl);
   }
 
-  .sub-title {
+  .cc-subtt {
     font-family: 'Cabin', sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -90,7 +90,7 @@
     letter-spacing: 2px;
   }
 
-  .lyrics {
+  .cc-lyrics {
     font-family: 'Cabin', sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -100,12 +100,12 @@
     margin-top: 8px;
   }
 
-  .lyrics div {
+  .cc-lyrics div {
     margin: 0;
   }
 
   @media (max-width: 768px) {
-    .container {
+    .cc-container {
       flex-direction: column; /* ✅ ซ้อนกันแนวตั้ง */
       align-items: center;
       width: 100%;
@@ -113,42 +113,42 @@
       min-height: auto;
     }
 
-    .image-column {
+    .cc-column {
       width: 180px;
       height: 130px;
     }
 
-    .image-box {
+    .cc-box {
       width: 120px;
       height: 80px;
       border-width: 5px;
     }
 
-    .image-box:first-child {
+    .cc-box:first-child {
       left: 5px;
       top: 10px;
     }
 
-    .image-box:last-child {
+    .cc-box:last-child {
       left: 80px;
       top: 25px;
     }
 
-    .text-column {
+    .cc-txcl {
       padding: 0 10px;
       text-align: center;
     }
 
-    .main-name {
+    .cc-name {
       font-size: 22px;
     }
 
-    .sub-title {
+    .cc-name {
       font-size: 12px;
       letter-spacing: 1px;
     }
 
-    .lyrics {
+    .cc-lyrics {
       font-size: 11px;
       line-height: 16px;
     }
