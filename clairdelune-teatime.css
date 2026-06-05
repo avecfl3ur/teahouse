@@ -283,6 +283,20 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 3px solid var(--tt-muted);
+  background: #ffffff;
+  border-radius: 45px;
+  padding: 0 40px;
+}
+
+.tt-nav i {
+  font-size: 30px;
+  color: var(--tt-muted);
+  cursor: pointer;
+}
+
+.tt-nav i.active {
+  color: #2b231d;
 }
 
 .tt-bg-img1,
