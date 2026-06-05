@@ -39,6 +39,9 @@ alltt {
   overflow: hidden;
   background: var(--tt-bg);
   margin: 0 auto; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .teatime-blur-1,
