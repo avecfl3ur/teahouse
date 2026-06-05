@@ -22,7 +22,7 @@
   box-sizing: border-box;
 }
 
-body {
+alltt {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: var(--tt-bg);
   display: flex;
