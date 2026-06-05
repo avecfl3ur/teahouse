@@ -33,7 +33,6 @@ alltt {
 
 .teatime-canvas {
   width: 100%; 
-  max-width: 1080px; 
   aspect-ratio: 9 / 16;
   position: relative;
   overflow: hidden;
