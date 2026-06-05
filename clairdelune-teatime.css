@@ -1,296 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-.tt-wrapper {
+.teatime-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  overflow: hidden;
-  background: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.teatime-canvas {
-  width: 1080px;
-  height: 1920px;
+.teatime-container .teatime-box {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 9 / 16;
   position: relative;
-  background: #ffffff;
-  transform-origin: top center;
-  transform: scale(min(1, calc(100vw / 1080)));
-  flex-shrink: 0;
   overflow: hidden;
+  background: #ffffff;
+  border-radius: 20px;
 }
 
-.teatime-blur-1, 
-.teatime-blur-2 {
+.teatime-box .teatime-layout {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(130px);
-  pointer-events: none;
-}
-
-.teatime-blur-1 { 
-  width: 750px; 
-  height: 750px; 
-  background: rgba(245, 210, 215, 0.55); 
-  top: 250px; 
-  left: -200px; 
-}
-
-.teatime-blur-2 { 
-  width: 650px; 
-  height: 650px; 
-  background: rgba(235, 220, 212, 0.5); 
-  bottom: 350px; 
-  right: -150px; 
-}
-
-.teatime-layout {
-  position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  padding: 90px 100px 140px;
+  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
-.teatime-top { 
-  width: 100%; 
-  display: flex; 
-  justify-content: space-between; 
-  font-weight: 800; 
-  letter-spacing: 6px; 
-  margin-bottom: 70px; 
-  color: #1a1a1a; 
+.teatime-layout .teatime-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 5%;
+  color: #1a1a1a;
 }
 
-.teatime-header { 
-  text-align: center; 
-  margin-bottom: 80px; 
-  color: #1a1a1a; 
+.teatime-layout .teatime-header {
+  text-align: center;
+  margin-bottom: 5%;
 }
 
-.teatime-h1 { 
-  font-size: 115px; 
-  font-weight: 800; 
-  letter-spacing: -2px; 
-  line-height: 1; 
+.teatime-layout .teatime-h1 {
+  font-size: 8vw;
+  font-weight: 800;
+  line-height: 1;
 }
 
-.tt-meta { 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  gap: 12px; 
-  margin-top: 25px; 
-  font-weight: 800; 
-  letter-spacing: 2.5px; 
+.teatime-layout .teatime-main-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
 }
 
-.tt-badge { 
-  background: #2b231d; 
-  color: #fff; 
-  padding: 8px 22px; 
-  border-radius: 16px; 
-}
-
-.teatime-main-cards { 
-  width: 100%; 
-  padding: 0 75px; 
-  display: flex; 
-  justify-content: space-between; 
-  margin-bottom: 45px; 
-}
-
-.teatime-card-v { 
-  width: 440px; 
-  height: 640px; 
-  padding: 30px; 
-  display: flex; 
-  flex-direction: column; 
-}
-
-.tt-frame { 
-  width: 100%; 
-  height: 380px; 
-  border-radius: 35px; 
-  overflow: hidden; 
-}
-
-.tt-details { 
-  margin-top: 30px; 
-}
-
-.teatime-h3 { 
-  font-size: 24px; 
-  font-weight: 800; 
-}
-
-.teatime-p { 
-  margin-top: 6px; 
-  color: #e8ccd7; 
-  font-weight: 700; 
-}
-
-.tt-credit { 
-  margin-top: auto; 
-  text-align: center; 
-  color: #b5b5b5; 
-}
-
-.teatime-right-group { 
-  width: 440px; 
-  display: flex; 
-  flex-direction: column; 
-  gap: 25px; 
-}
-
-.teatime-card-h { 
-  width: 100%; 
-  height: 340px; 
-  overflow: hidden; 
-}
-
-.tt-search { 
-  width: 100%; 
-  height: 68px; 
-  border-radius: 34px; 
-  border: 3px solid #b5b5b5; 
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  padding: 0 25px; 
-}
-
-.teatime-span { 
-  display: block; 
-}
-
-.tt-buttons { 
-  display: flex; 
-  gap: 20px; 
-}
-
-.tt-btn { 
-  flex: 1; 
-  height: 74px; 
-  border-radius: 37px; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  font-weight: 700; 
-}
-
-.tt-btn.filled { 
-  background: #ccc; 
-  color: #fff; 
-}
-
-.tt-btn.outlined { 
-  border: 3px solid #b5b5b5; 
-  color: #b5b5b5; 
-}
-
-.tt-tags { 
-  display: flex; 
-  justify-content: space-between; 
-  font-weight: 800; 
-}
-
-.tt-tag-1 { 
-  color: #e8ccd7; 
-}
-
-.tt-tag-2 { 
-  color: #b5b5b5; 
-}
-
-.teatime-music { 
-  width: 930px; 
-  height: 90px; 
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  padding: 0 35px; 
-  margin-bottom: 45px; 
-}
-
-.tt-music-icon { 
-  width: 46px; 
-  height: 46px; 
-  border-radius: 50%; 
-  background: #e8ccd7; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  color: #fff; 
-}
-
-.teatime-gallery { 
-  width: 930px; 
-  display: flex; 
-  justify-content: space-between; 
-  margin-bottom: 60px; 
-}
-
-.teatime-gal-item { 
-  width: 290px; 
-  height: 200px; 
-  border-radius: 30px; 
-  overflow: hidden; 
-}
-
-.teatime-footer { 
-  text-align: center; 
-}
-
-.tt-foot-badge { 
-  background: #2b231d; 
-  color: #fff; 
-  padding: 10px 26px; 
-  border-radius: 14px; 
-  display: inline-block; 
-  margin-bottom: 25px; 
-}
-
-.tt-quote { 
-  font-size: 20px; 
-  line-height: 1.6; 
-}
-
-.teatime-nav { 
-  position: absolute; 
-  bottom: 40px; 
-  width: 930px; 
-  height: 90px; 
-  display: flex; 
-  justify-content: space-around; 
-  align-items: center; 
-  border: 3px solid #b5b5b5; 
-  background: #ffffff; 
-  border-radius: 45px; 
-  padding: 0 40px; 
-}
-
-.tt-nav-icon { 
-  font-size: 30px; 
-  color: #b5b5b5; 
-  cursor: pointer; 
-}
-
-.tt-nav-icon.active { 
-  color: #2b231d; 
-}
-
-.tt-bg-img1, 
-.tt-bg-img2, 
-.tt-bg-gal1, 
-.tt-bg-gal2, 
-.tt-bg-gal3 { 
-  width: 100%; 
-  height: 100%; 
-  background-size: cover; 
-  background-position: center; 
+.teatime-box .teatime-blur-1, 
+.teatime-box .teatime-blur-2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
 }
