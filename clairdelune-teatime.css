@@ -22,7 +22,7 @@
   box-sizing: border-box;
 }
 
-alltt {
+body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: var(--tt-bg);
   display: flex;
@@ -31,7 +31,7 @@ alltt {
   min-height: 100vh;
 }
 
-.tt-canvas {
+.teatime-canvas {
   width: 1080px;
   height: 1920px;
   position: relative;
@@ -39,15 +39,15 @@ alltt {
   background: var(--tt-bg);
 }
 
-.tt-blur-a,
-.tt-blur-b {
+.teatime-blur-1,
+.teatime-blur-2 {
   position: absolute;
   border-radius: 50%;
   filter: blur(130px);
   pointer-events: none;
 }
 
-.tt-blur-a {
+.teatime-blur-1 {
   width: 750px;
   height: 750px;
   background: var(--tt-blur-a);
@@ -55,7 +55,7 @@ alltt {
   left: -200px;
 }
 
-.tt-blur-b {
+.teatime-blur-2 {
   width: 650px;
   height: 650px;
   background: var(--tt-blur-b);
@@ -63,7 +63,7 @@ alltt {
   right: -150px;
 }
 
-.tt-layout {
+.teatime-layout {
   position: relative;
   z-index: 5;
   width: 100%;
@@ -74,7 +74,7 @@ alltt {
   align-items: center;
 }
 
-.tt-top {
+.teatime-top {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -85,13 +85,13 @@ alltt {
   color: var(--tt-dark);
 }
 
-.tt-header {
+.teatime-header {
   text-align: center;
   margin-bottom: 80px;
   color: var(--tt-dark);
 }
 
-.tt-header h1 {
+.teatime-h1 {
   font-size: 115px;
   font-weight: 800;
   letter-spacing: -2px;
@@ -115,7 +115,7 @@ alltt {
   border-radius: 16px;
 }
 
-.tt-main {
+.teatime-main-cards {
   width: 100%;
   padding: 0 75px;
   display: flex;
@@ -123,7 +123,7 @@ alltt {
   margin-bottom: 45px;
 }
 
-.tt-card-v {
+.teatime-card-v {
   width: 440px;
   height: 640px;
   padding: 30px;
@@ -142,12 +142,12 @@ alltt {
   margin-top: 30px;
 }
 
-.tt-details h3 {
+.teatime-h3 {
   font-size: 24px;
   font-weight: 800;
 }
 
-.tt-details p {
+.teatime-p {
   margin-top: 6px;
   color: var(--tt-theme);
   font-weight: 700;
@@ -159,14 +159,14 @@ alltt {
   color: var(--tt-muted);
 }
 
-.tt-right {
+.teatime-right-group {
   width: 440px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-.tt-card-h {
+.teatime-card-h {
   width: 100%;
   height: 340px;
   overflow: hidden;
@@ -181,6 +181,10 @@ alltt {
   align-items: center;
   justify-content: space-between;
   padding: 0 25px;
+}
+
+.teatime-span {
+  display: block;
 }
 
 .tt-buttons {
@@ -222,7 +226,7 @@ alltt {
   color: var(--tt-muted);
 }
 
-.tt-music {
+.teatime-music {
   width: 930px;
   height: 90px;
   display: flex;
@@ -243,21 +247,21 @@ alltt {
   color: #fff;
 }
 
-.tt-gallery {
+.teatime-gallery {
   width: 930px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
 }
 
-.tt-gal {
+.teatime-gal-item {
   width: 290px;
   height: 200px;
   border-radius: 30px;
   overflow: hidden;
 }
 
-.tt-footer {
+.teatime-footer {
   text-align: center;
 }
 
@@ -275,7 +279,7 @@ alltt {
   line-height: 1.6;
 }
 
-.tt-nav {
+.teatime-nav {
   position: absolute;
   bottom: 40px;
   width: 930px;
@@ -289,13 +293,13 @@ alltt {
   padding: 0 40px;
 }
 
-.tt-nav i {
+.tt-nav-icon {
   font-size: 30px;
   color: var(--tt-muted);
   cursor: pointer;
 }
 
-.tt-nav i.active {
+.tt-nav-icon.active {
   color: #2b231d;
 }
 
