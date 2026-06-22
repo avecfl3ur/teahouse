@@ -1,69 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
-.teatime-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+.teatime-canvas, .teatime-canvas * {
+    all: revert;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
 
-.teatime-container .teatime-box {
-  width: 100%;
-  max-width: 800px;
-  aspect-ratio: 9 / 16;
-  position: relative;
-  overflow: hidden;
-  background: #ffffff;
-  border-radius: 20px;
+.teatime-canvas {
+    width: 1080px !important;
+    height: 1920px !important;
+    position: relative !important;
+    background: #ffffff !important;
+    overflow: hidden !important;
+    margin: 0 auto !important;
+    color: #1a1a1a !important;
 }
 
-.teatime-box .teatime-layout {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
+.teatime-canvas div, .teatime-canvas h1, .teatime-canvas p, .teatime-canvas span {
+    background-color: transparent !important;
+    color: #1a1a1a !important;
 }
 
-.teatime-layout .teatime-top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 800;
-  letter-spacing: 4px;
-  margin-bottom: 5%;
-  color: #1a1a1a;
+.teatime-layout {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 5 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 90px 0 140px !important;
 }
 
-.teatime-layout .teatime-header {
-  text-align: center;
-  margin-bottom: 5%;
+.teatime-top {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    letter-spacing: 6px !important;
+    color: #1a1a1a !important;
+    padding: 0 100px !important;
+    margin-bottom: 70px !important;
 }
 
-.teatime-layout .teatime-h1 {
-  font-size: 8vw;
-  font-weight: 800;
-  line-height: 1;
+.teatime-header {
+    text-align: center !important;
+    position: relative !important;
+    margin-bottom: 80px !important;
+    padding: 0 100px !important;
 }
 
-.teatime-layout .teatime-main-cards {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 2%;
+.teatime-header h1 {
+    font-size: 115px !important;
+    font-weight: 800 !important;
+    letter-spacing: -2px !important;
+    line-height: 1 !important;
 }
 
-.teatime-box .teatime-blur-1, 
-.teatime-box .teatime-blur-2 {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  pointer-events: none;
+.tt-badge {
+    background: #2b231d !important;
+    color: #ffffff !important;
+    padding: 8px 22px !important;
+    border-radius: 16px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.teatime-main-cards {
+    width: 100% !important;
+    padding: 0 75px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-bottom: 45px !important;
+    z-index: 10 !important;
+}
+
+.teatime-card-v {
+    width: 440px !important;
+    height: 640px !important;
+    padding: 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border: 3px solid #b5b5b5 !important;
+    background: #ffffff !important;
+    border-radius: 45px !important;
+}
+
+.teatime-right-group {
+    width: 440px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+}
+
+.tt-search {
+    width: 100% !important;
+    height: 68px !important;
+    border-radius: 34px !important;
+    border: 3px solid #b5b5b5 !important;
+    background: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 25px !important;
+}
+
+.tt-btn.filled {
+    background: #cccccc !important;
+    color: #ffffff !important;
+}
+
+.tt-btn.outlined {
+    border: 3px solid #b5b5b5 !important;
+    background: #ffffff !important;
+    color: #b5b5b5 !important;
 }
