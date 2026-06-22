@@ -20,67 +20,128 @@
   all: revert;
   box-sizing: border-box;
   width: 100%;
-  height: auto; /* ปล่อยสูงตามเนื้อหา */
-  min-height: 100vh;
-  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
   background: var(--tt-bg);
-  padding: 5% 3%;
   font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.teatime-layout {
+  border-radius: 40px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 20px;
 }
 
 .teatime-top {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
   font-weight: 800;
-  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
 }
 
-.teatime-header { text-align: center; }
-.teatime-header h1 { font-size: clamp(3rem, 8vw, 7rem); line-height: 1; }
+.teatime-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.teatime-header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
 
 .teatime-main-cards {
   display: flex;
-  flex-wrap: wrap; /* ยืดหยุ่น: ถ้าจอแคบ กล่องจะตกบรรทัด */
-  gap: 20px;
+  gap: 15px;
 }
 
-.teatime-card-v, .teatime-right-group {
-  flex: 1 1 300px; /* ยืดหยุ่น: อย่างน้อย 300px ถ้าจอพอจะขยายให้เท่ากัน */
-  padding: 2rem;
-  border: 3px solid var(--tt-muted);
-  border-radius: 2rem;
+.teatime-card-v {
+  flex: 1;
+  border: 2px solid #eee;
+  border-radius: 30px;
+  padding: 15px;
 }
 
-.teatime-card-v .tt-frame {
+.teatime-right-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tt-frame,
+.teatime-card-h {
   width: 100%;
-  height: 200px; /* กำหนดสูงแค่นี้พอ */
-  border-radius: 1.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
   overflow: hidden;
-  border: 2px solid #cecece;
+  background-size: cover;
+  background-position: center;
 }
 
-.teatime-right-group { display: flex; flex-direction: column; gap: 1rem; }
+.tt-search {
+  border: 2px solid #eee;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
 
-.teatime-music, .teatime-nav {
-  width: 100%;
-  padding: 1.5rem;
-  border: 3px solid var(--tt-muted);
-  border-radius: 2rem;
+.teatime-music {
+  padding: 15px;
+  border: 2px solid #eee;
+  border-radius: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.tt-bg-img1 { background-image: var(--tt-p1); background-size: cover; background-position: center; width: 100%; height: 100%; }
-.tt-bg-img2 { background-image: var(--tt-p2); background-size: cover; background-position: center; width: 100%; height: 100%; }
-.tt-bg-gal1 { background-image: var(--tt-p3); background-size: cover; background-position: center; width: 100%; height: 100%; }
-.tt-bg-gal2 { background-image: var(--tt-p4); background-size: cover; background-position: center; width: 100%; height: 100%; }
-.tt-bg-gal3 { background-image: var(--tt-p5); background-size: cover; background-position: center; width: 100%; height: 100%; }
+.teatime-gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.teatime-gal-item {
+  flex: 1;
+  aspect-ratio: 1/0.7;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.teatime-footer {
+  text-align: center;
+  padding: 20px;
+  white-space: pre-line;
+}
+
+.teatime-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.tt-bg-img1 {
+  background-image: var(--tt-p1);
+  height: 100%;
+}
+
+.tt-bg-img2 {
+  background-image: var(--tt-p2);
+  height: 100%;
+}
+
+.tt-bg-gal1 {
+  background-image: var(--tt-p3);
+  height: 100%;
+}
+
+.tt-bg-gal2 {
+  background-image: var(--tt-p4);
+  height: 100%;
+}
+
+.tt-bg-gal3 {
+  background-image: var(--tt-p5);
+  height: 100%;
+}
