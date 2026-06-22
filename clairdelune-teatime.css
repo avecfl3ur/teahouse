@@ -31,26 +31,25 @@ body {
   all: revert;
   box-sizing: border-box;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 28px;
   background: var(--tt-bg);
-  border-radius: 40px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .teatime-top {
   display: flex;
   justify-content: space-between;
   font-weight: 800;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .teatime-header {
   text-align: center;
-  margin: 20px 0;
+  margin: 24px 0;
 }
 
 .teatime-header h1 {
@@ -60,30 +59,27 @@ body {
 
 .teatime-main-cards {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .teatime-card-v {
-  flex: 1 1 280px;
+  flex: 1 1 320px;
   border: 2px solid #eee;
-  border-radius: 30px;
-  padding: 15px;
+  padding: 18px;
 }
 
 .teatime-right-group {
-  flex: 1 1 280px;
+  flex: 1 1 320px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
 
 .tt-frame,
 .teatime-card-h {
   width: 100%;
   aspect-ratio: 1/1;
-  border-radius: 20px;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
 }
@@ -91,42 +87,39 @@ body {
 .tt-search,
 .teatime-music {
   border: 2px solid #eee;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 14px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 
 .teatime-gallery {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .teatime-gal-item {
-  flex: 1 1 100px;
+  flex: 1 1 140px;
   aspect-ratio: 1/0.7;
-  border-radius: 20px;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
 }
 
 .teatime-footer {
   text-align: center;
-  padding: 20px;
+  padding: 24px;
   white-space: pre-line;
 }
 
 .teatime-nav {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 24px;
   border-top: 2px solid #eee;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
 .tt-bg-img1 { background-image: var(--tt-p1); height: 100%; }
@@ -137,22 +130,21 @@ body {
 
 @media (max-width: 768px) {
   .teatime-canvas {
-    padding: 15px;
-    border-radius: 25px;
+    padding: 18px;
   }
 
   .teatime-header h1 {
     font-size: 2.2rem;
   }
 
-  .teatime-top {
-    font-size: 0.75rem;
+  .teatime-main-cards {
+    flex-direction: column;
   }
 }
 
 @media (max-width: 480px) {
   .teatime-canvas {
-    padding: 12px;
+    padding: 14px;
   }
 
   .teatime-header h1 {
@@ -162,9 +154,5 @@ body {
   .teatime-nav {
     flex-direction: column;
     align-items: center;
-  }
-
-  .teatime-footer {
-    font-size: 0.85rem;
   }
 }
