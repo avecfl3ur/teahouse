@@ -16,6 +16,17 @@
   --tt-p5: url('https://iili.io/Cf2Hfaf.png');
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--tt-text);
+}
+
 .teatime-canvas {
   all: revert;
   box-sizing: border-box;
@@ -24,7 +35,6 @@
   margin: 0 auto;
   padding: 20px;
   background: var(--tt-bg);
-  font-family: 'Plus Jakarta Sans', sans-serif;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
@@ -51,17 +61,18 @@
 .teatime-main-cards {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .teatime-card-v {
-  flex: 1;
+  flex: 1 1 280px;
   border: 2px solid #eee;
   border-radius: 30px;
   padding: 15px;
 }
 
 .teatime-right-group {
-  flex: 1;
+  flex: 1 1 280px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -77,30 +88,25 @@
   background-position: center;
 }
 
-.tt-search {
+.tt-search,
+.teatime-music {
   border: 2px solid #eee;
   padding: 10px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-}
-
-.teatime-music {
-  padding: 15px;
-  border: 2px solid #eee;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .teatime-gallery {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .teatime-gal-item {
-  flex: 1;
+  flex: 1 1 100px;
   aspect-ratio: 1/0.7;
   border-radius: 20px;
   overflow: hidden;
@@ -119,29 +125,46 @@
   justify-content: space-around;
   padding: 20px;
   border-top: 2px solid #eee;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.tt-bg-img1 {
-  background-image: var(--tt-p1);
-  height: 100%;
+.tt-bg-img1 { background-image: var(--tt-p1); height: 100%; }
+.tt-bg-img2 { background-image: var(--tt-p2); height: 100%; }
+.tt-bg-gal1 { background-image: var(--tt-p3); height: 100%; }
+.tt-bg-gal2 { background-image: var(--tt-p4); height: 100%; }
+.tt-bg-gal3 { background-image: var(--tt-p5); height: 100%; }
+
+@media (max-width: 768px) {
+  .teatime-canvas {
+    padding: 15px;
+    border-radius: 25px;
+  }
+
+  .teatime-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .teatime-top {
+    font-size: 0.75rem;
+  }
 }
 
-.tt-bg-img2 {
-  background-image: var(--tt-p2);
-  height: 100%;
-}
+@media (max-width: 480px) {
+  .teatime-canvas {
+    padding: 12px;
+  }
 
-.tt-bg-gal1 {
-  background-image: var(--tt-p3);
-  height: 100%;
-}
+  .teatime-header h1 {
+    font-size: 1.8rem;
+  }
 
-.tt-bg-gal2 {
-  background-image: var(--tt-p4);
-  height: 100%;
-}
+  .teatime-nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.tt-bg-gal3 {
-  background-image: var(--tt-p5);
-  height: 100%;
+  .teatime-footer {
+    font-size: 0.85rem;
+  }
 }
