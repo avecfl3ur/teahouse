@@ -17,14 +17,15 @@
 }
 
 .teatime-canvas {
-  width: 1080px;
-  height: 1920px;
+  all: revert;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1080px;
+  aspect-ratio: 1080 / 1920;
   position: relative;
   background: var(--tt-bg);
   overflow: hidden;
   margin: 0 auto;
-  transform-origin: top center;
-  transform: scale(min(1, 100vw / 1080));
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -36,19 +37,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 90px 0 140px;
+  padding: 5% 0 7%;
 }
 
 .teatime-top {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 1.6vw;
   font-weight: 800;
-  letter-spacing: 6px;
+  letter-spacing: 0.5vw;
   color: #1a1a1a;
-  padding: 0 100px;
-  margin-bottom: 70px;
+  padding: 0 9%;
+  margin-bottom: 4%;
 }
 
 .teatime-blur-1, .teatime-blur-2 {
@@ -56,37 +57,37 @@
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
-  filter: blur(130px);
+  filter: blur(12vw);
 }
 
 .teatime-blur-1 {
-  width: 750px;
-  height: 750px;
+  width: 70%;
+  height: 40%;
   background: var(--tt-blur-a);
-  top: 250px;
-  left: -200px;
+  top: 13%;
+  left: -18%;
 }
 
 .teatime-blur-2 {
-  width: 650px;
-  height: 650px;
+  width: 60%;
+  height: 34%;
   background: var(--tt-blur-b);
-  bottom: 350px;
-  right: -150px;
+  bottom: 18%;
+  right: -14%;
 }
 
 .teatime-header {
   text-align: center;
   position: relative;
-  margin-bottom: 80px;
-  padding: 0 100px;
+  margin-bottom: 4%;
+  padding: 0 9%;
   color: var(--tt-dark);
 }
 
 .teatime-header h1 {
-  font-size: 115px;
+  font-size: 10vw;
   font-weight: 800;
-  letter-spacing: -2px;
+  letter-spacing: -0.2vw;
   line-height: 1;
 }
 
@@ -94,149 +95,149 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-top: 25px;
-  font-size: 16px;
+  gap: 1vw;
+  margin-top: 1.5%;
+  font-size: 1.5vw;
   font-weight: 800;
-  letter-spacing: 2.5px;
+  letter-spacing: 0.2vw;
   color: #2b231d;
 }
 
 .teatime-header .tt-badge {
   background: #2b231d;
   color: #ffffff;
-  padding: 8px 22px;
-  border-radius: 16px;
-  font-size: 15px;
+  padding: 0.7% 2%;
+  border-radius: 1.5vw;
+  font-size: 1.4vw;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.7vw;
 }
 
 .teatime-main-cards {
   width: 100%;
-  padding: 0 75px;
+  padding: 0 7%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 2%;
   z-index: 10;
   position: relative;
 }
 
 .teatime-card-v {
-  width: 440px;
-  height: 640px;
-  padding: 30px;
+  width: 41%;
+  height: 33%;
+  padding: 3%;
   display: flex;
   flex-direction: column;
-  border: 3px solid var(--tt-muted);
+  border: 0.3vw solid var(--tt-muted);
   background: #ffffff;
-  border-radius: 45px;
+  border-radius: 4vw;
 }
 
 .teatime-card-v .tt-frame {
   width: 100%;
-  height: 380px;
-  border-radius: 35px;
+  height: 60%;
+  border-radius: 3vw;
   overflow: hidden;
-  border: 2px solid #cecece;
+  border: 0.2vw solid #cecece;
 }
 
 .teatime-card-v .tt-details {
-  margin-top: 30px;
-  padding-left: 10px;
+  margin-top: 3%;
+  padding-left: 1%;
 }
 
 .teatime-card-v .tt-details h3 {
-  font-size: 24px;
+  font-size: 2.2vw;
   font-weight: 800;
   color: #4a4a4a;
   text-transform: uppercase;
 }
 
 .teatime-card-v .tt-details p {
-  font-size: 16px;
+  font-size: 1.5vw;
   font-weight: 700;
   color: var(--tt-theme);
-  margin-top: 6px;
+  margin-top: 0.5%;
 }
 
 .teatime-right-group {
-  width: 440px;
+  width: 41%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 1.5vw;
 }
 
 .teatime-card-h {
   width: 100%;
-  height: 340px;
+  height: 18%;
   overflow: hidden;
-  border: 3px solid var(--tt-muted);
+  border: 0.3vw solid var(--tt-muted);
   background: #ffffff;
-  border-radius: 45px;
+  border-radius: 4vw;
 }
 
 .teatime-right-group .tt-search {
   width: 100%;
-  height: 68px;
-  border-radius: 34px;
-  border: 3px solid var(--tt-muted);
+  height: 7%;
+  border-radius: 3vw;
+  border: 0.3vw solid var(--tt-muted);
   background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 2%;
   color: var(--tt-muted);
-  font-size: 15px;
+  font-size: 1.4vw;
   font-weight: 500;
 }
 
 .teatime-music {
-  width: 930px;
-  height: 90px;
+  width: 86%;
+  height: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 35px;
-  margin-bottom: 45px;
+  padding: 0 3%;
+  margin-bottom: 2%;
   z-index: 10;
-  border: 3px solid var(--tt-muted);
+  border: 0.3vw solid var(--tt-muted);
   background: #ffffff;
-  border-radius: 45px;
+  border-radius: 4vw;
 }
 
 .teatime-gallery {
-  width: 930px;
+  width: 86%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 3%;
   z-index: 10;
 }
 
 .teatime-gal-item {
-  width: 290px;
-  height: 200px;
-  border-radius: 30px;
+  width: 31%;
+  height: 10%;
+  border-radius: 3vw;
   overflow: hidden;
-  border: 3px solid var(--tt-muted);
+  border: 0.3vw solid var(--tt-muted);
   background: #ffffff;
 }
 
 .teatime-nav {
   position: absolute;
-  bottom: 40px;
-  width: 930px;
-  height: 90px;
+  bottom: 2%;
+  width: 86%;
+  height: 5%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 4%;
   z-index: 20;
-  border: 3px solid var(--tt-muted);
+  border: 0.3vw solid var(--tt-muted);
   background: #ffffff;
-  border-radius: 45px;
+  border-radius: 4vw;
 }
 
 .tt-bg-img1 { background-image: var(--tt-p1); background-size: cover; background-position: center; width: 100%; height: 100%; }
