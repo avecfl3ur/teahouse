@@ -23,9 +23,9 @@
   background: var(--tt-bg);
   overflow: hidden;
   margin: 0 auto;
-  font-family: 'Plus Jakarta Sans', sans-serif;
   transform-origin: top center;
   transform: scale(min(1, 100vw / 1080));
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .teatime-layout {
