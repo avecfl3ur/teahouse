@@ -28,7 +28,7 @@
 }
 .teatime-canvas {
   width: 750px;
-  height: 1330px;
+  height: 1450px; /* ขยายความสูงแคนวาสให้พอดีกับเนื้อเพลงและเมนูด้านล่าง */
   margin: 0 auto;
   position: relative;
   background: var(--tt-bg);
@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0 90px;
+  padding: 45px 0 25px;
 }
 .teatime-top {
   width: 100%;
@@ -55,7 +55,7 @@
   letter-spacing: 4px;
   color: #1a1a1a;
   padding: 0 70px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .teatime-blur-1, .teatime-blur-2 {
   position: absolute;
@@ -81,7 +81,7 @@
 .teatime-header {
   text-align: center;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 0 70px;
   color: var(--tt-dark);
 }
@@ -96,7 +96,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 10px;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -118,26 +118,26 @@
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   z-index: 10;
   position: relative;
 }
 .teatime-card-v {
   width: 305px;
-  height: 440px;
+  height: 460px;
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
 .teatime-card-v .tt-frame {
   width: 100%;
-  height: 220px; /* ปรับความสูงกรอบรูปให้พอดี ไม่ตัดหัวรูปด้านบน */
+  height: 300px;
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid #cecece;
 }
 .teatime-card-v .tt-details {
-  margin-top: 15px;
+  margin-top: 12px;
   padding-left: 5px;
 }
 .teatime-card-v .tt-details h3 {
@@ -163,16 +163,16 @@
   width: 305px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 .teatime-card-h {
   width: 100%;
-  height: 220px; /* ปรับความสูงให้สมดุลกับการ์ดซ้าย */
+  height: 225px;
   overflow: hidden;
 }
 .teatime-right-group .tt-search {
   width: 100%;
-  height: 45px;
+  height: 40px;
   border-radius: 20px;
   border: 2px solid var(--tt-muted);
   background: #ffffff;
@@ -193,7 +193,7 @@
 }
 .teatime-right-group .tt-btn {
   flex: 1;
-  height: 45px;
+  height: 40px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -225,12 +225,12 @@
 }
 .teatime-music {
   width: 645px;
-  height: 60px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   z-index: 10;
 }
 .teatime-music .tt-music-info {
@@ -240,8 +240,8 @@
   width: 35%;
 }
 .teatime-music .tt-music-icon {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background: var(--tt-theme);
   display: flex;
@@ -290,12 +290,12 @@
   width: 645px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   z-index: 10;
 }
 .teatime-gal-item {
   width: 200px;
-  height: 130px;
+  height: 115px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -305,29 +305,29 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  z-index: 10;
 }
 .teatime-footer .tt-foot-badge {
   background: #2b231d;
   color: #ffffff;
   font-size: 10px;
   font-weight: 800;
-  padding: 6px 16px;
+  padding: 5px 14px;
   border-radius: 10px;
   letter-spacing: 1px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .teatime-footer .tt-quote {
-  font-size: 13px;
+  font-size: 12px;
   color: #1a1a1a;
   line-height: 1.5;
   font-weight: 500;
 }
 .teatime-nav {
-  position: absolute;
-  bottom: 25px;
+  position: relative;
   width: 645px;
-  height: 55px;
+  height: 52px;
   display: flex;
   justify-content: space-around;
   align-items: center;
