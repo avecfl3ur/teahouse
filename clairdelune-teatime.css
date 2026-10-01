@@ -22,9 +22,9 @@
 }
 
 .teatime-box, .teatime-card-v, .teatime-card-h, .teatime-music, .teatime-nav, .teatime-gal-item {
-  border: 3px solid var(--tt-muted);
+  border: 2px solid var(--tt-muted);
   background: #ffffff;
-  border-radius: 45px;
+  border-radius: 30px;
 }
 
 .teatime-canvas {
@@ -194,7 +194,7 @@
   width: 100%;
   height: 47px;
   border-radius: 24px;
-  border: 3px solid var(--tt-muted);
+  border: 2px solid var(--tt-muted);
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -231,7 +231,7 @@
 }
 
 .teatime-right-group .tt-btn.outlined {
-  border: 3px solid var(--tt-muted);
+  border: 2px solid var(--tt-muted);
   background: #ffffff;
   color: var(--tt-muted);
 }
