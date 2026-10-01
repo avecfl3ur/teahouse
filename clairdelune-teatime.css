@@ -22,18 +22,19 @@
   box-sizing: border-box;
 }
 .teatime-box, .teatime-card-v, .teatime-card-h, .teatime-music, .teatime-nav, .teatime-gal-item {
-  border: 3px solid var(--tt-muted);
+  border: 0.2778cqw solid var(--tt-muted);
   background: #ffffff;
-  border-radius: 45px;
+  border-radius: 4.1667cqw;
 }
 .teatime-canvas {
-  width: 1080px;
-  height: 1920px;
+  width: 100%;
+  max-width: 1080px;
+  aspect-ratio: 1080 / 1920;
+  container-type: inline-size;
   margin: 0 auto;
   position: relative;
   background: var(--tt-bg);
   overflow: hidden;
-  flex-shrink: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .teatime-layout {
@@ -44,144 +45,144 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 90px 0 140px;
+  padding: 8.3333cqw 0 12.963cqw;
 }
 .teatime-top {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 1.6667cqw;
   font-weight: 800;
-  letter-spacing: 6px;
+  letter-spacing: 0.5556cqw;
   color: #1a1a1a;
-  padding: 0 100px;
-  margin-bottom: 70px;
+  padding: 0 9.2593cqw;
+  margin-bottom: 6.4815cqw;
 }
 .teatime-blur-1, .teatime-blur-2 {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
-  filter: blur(130px);
+  filter: blur(12.037cqw);
 }
 .teatime-blur-1 {
-  width: 750px;
-  height: 750px;
+  width: 69.4444cqw;
+  height: 69.4444cqw;
   background: var(--tt-blur-1);
-  top: 250px;
-  left: -200px;
+  top: 23.1481cqw;
+  left: -18.5185cqw;
 }
 .teatime-blur-2 {
-  width: 650px;
-  height: 650px;
+  width: 60.1852cqw;
+  height: 60.1852cqw;
   background: var(--tt-blur-2);
-  bottom: 350px;
-  right: -150px;
+  bottom: 32.4074cqw;
+  right: -13.8889cqw;
 }
 .teatime-header {
   text-align: center;
   position: relative;
-  margin-bottom: 80px;
-  padding: 0 100px;
+  margin-bottom: 7.4074cqw;
+  padding: 0 9.2593cqw;
   color: var(--tt-dark);
 }
 .teatime-header h1 {
-  font-size: 115px;
+  font-size: 10.6481cqw;
   font-weight: 800;
-  letter-spacing: -2px;
+  letter-spacing: -0.1852cqw;
   line-height: 1;
 }
 .teatime-header .tt-meta {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-top: 25px;
-  font-size: 16px;
+  gap: 1.1111cqw;
+  margin-top: 2.3148cqw;
+  font-size: 1.4815cqw;
   font-weight: 800;
-  letter-spacing: 2.5px;
+  letter-spacing: 0.2315cqw;
   color: #2b231d;
 }
 .teatime-header .tt-badge {
   background: #2b231d;
   color: #ffffff;
-  padding: 8px 22px;
-  border-radius: 16px;
-  font-size: 15px;
+  padding: 0.7407cqw 2.037cqw;
+  border-radius: 1.4815cqw;
+  font-size: 1.3889cqw;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.7407cqw;
 }
 .teatime-main-cards {
   width: 100%;
-  padding: 0 75px;
+  padding: 0 6.9444cqw;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 4.1667cqw;
   z-index: 10;
   position: relative;
 }
 .teatime-card-v {
-  width: 440px;
-  height: 640px;
-  padding: 30px;
+  width: 40.7407cqw;
+  height: 59.2593cqw;
+  padding: 2.7778cqw;
   display: flex;
   flex-direction: column;
 }
 .teatime-card-v .tt-frame {
   width: 100%;
-  height: 380px;
-  border-radius: 35px;
+  height: 35.1852cqw;
+  border-radius: 3.2407cqw;
   overflow: hidden;
-  border: 2px solid #cecece;
+  border: 0.1852cqw solid #cecece;
 }
 .teatime-card-v .tt-details {
-  margin-top: 30px;
-  padding-left: 10px;
+  margin-top: 2.7778cqw;
+  padding-left: 0.9259cqw;
 }
 .teatime-card-v .tt-details h3 {
-  font-size: 24px;
+  font-size: 2.2222cqw;
   font-weight: 800;
   color: #4a4a4a;
   text-transform: uppercase;
 }
 .teatime-card-v .tt-details p {
-  font-size: 16px;
+  font-size: 1.4815cqw;
   font-weight: 700;
   color: var(--tt-theme);
-  margin-top: 6px;
+  margin-top: 0.5556cqw;
 }
 .teatime-card-v .tt-credit {
-  font-size: 14px;
+  font-size: 1.2963cqw;
   color: var(--tt-muted);
   font-weight: 600;
   text-align: center;
   margin-top: auto;
 }
 .teatime-right-group {
-  width: 440px;
+  width: 40.7407cqw;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 2.3148cqw;
 }
 .teatime-card-h {
   width: 100%;
-  height: 340px;
+  height: 31.4815cqw;
   overflow: hidden;
 }
 .teatime-right-group .tt-search {
   width: 100%;
-  height: 68px;
-  border-radius: 34px;
-  border: 3px solid var(--tt-muted);
+  height: 6.2963cqw;
+  border-radius: 3.1481cqw;
+  border: 0.2778cqw solid var(--tt-muted);
   background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 2.3148cqw;
   color: var(--tt-muted);
-  font-size: 15px;
+  font-size: 1.3889cqw;
   font-weight: 500;
 }
 .teatime-right-group .tt-search i {
@@ -189,16 +190,16 @@
 }
 .teatime-right-group .tt-buttons {
   display: flex;
-  gap: 20px;
+  gap: 1.8519cqw;
 }
 .teatime-right-group .tt-btn {
   flex: 1;
-  height: 74px;
-  border-radius: 37px;
+  height: 6.8519cqw;
+  border-radius: 3.4259cqw;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 1.6667cqw;
   font-weight: 700;
 }
 .teatime-right-group .tt-btn.filled {
@@ -206,15 +207,15 @@
   color: #ffffff;
 }
 .teatime-right-group .tt-btn.outlined {
-  border: 3px solid var(--tt-muted);
+  border: 0.2778cqw solid var(--tt-muted);
   background: #ffffff;
   color: var(--tt-muted);
 }
 .teatime-right-group .tt-tags {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
-  font-size: 15px;
+  padding: 0 0.9259cqw;
+  font-size: 1.3889cqw;
   font-weight: 800;
 }
 .teatime-right-group .tt-tag-1 {
@@ -224,24 +225,24 @@
   color: var(--tt-muted);
 }
 .teatime-music {
-  width: 930px;
-  height: 90px;
+  width: 86.1111cqw;
+  height: 8.3333cqw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 35px;
-  margin-bottom: 45px;
+  padding: 0 3.2407cqw;
+  margin-bottom: 4.1667cqw;
   z-index: 10;
 }
 .teatime-music .tt-music-info {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1.3889cqw;
   width: 35%;
 }
 .teatime-music .tt-music-icon {
-  width: 46px;
-  height: 46px;
+  width: 4.2593cqw;
+  height: 4.2593cqw;
   border-radius: 50%;
   background: var(--tt-theme);
   display: flex;
@@ -250,7 +251,7 @@
   color: #ffffff;
 }
 .teatime-music .tt-music-title {
-  font-size: 16px;
+  font-size: 1.4815cqw;
   font-weight: 700;
   color: #4a4a4a;
 }
@@ -258,45 +259,45 @@
   width: 40%;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1.1111cqw;
 }
 .teatime-music .tt-time {
-  font-size: 13px;
+  font-size: 1.2037cqw;
   font-weight: 600;
   color: var(--tt-muted);
 }
 .teatime-music .tt-track {
   flex: 1;
-  height: 6px;
+  height: 0.5556cqw;
   background: #e0e0e0;
-  border-radius: 3px;
+  border-radius: 0.2778cqw;
 }
 .teatime-music .tt-fill {
   width: 45%;
   height: 100%;
   background: #4a4a4a;
-  border-radius: 3px;
+  border-radius: 0.2778cqw;
 }
 .teatime-music .tt-music-ctrl {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.8519cqw;
   width: 20%;
   justify-content: flex-end;
   color: #555555;
   cursor: pointer;
 }
 .teatime-gallery {
-  width: 930px;
+  width: 86.1111cqw;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 5.5556cqw;
   z-index: 10;
 }
 .teatime-gal-item {
-  width: 290px;
-  height: 200px;
-  border-radius: 30px;
+  width: 26.8519cqw;
+  height: 18.5185cqw;
+  border-radius: 2.7778cqw;
   overflow: hidden;
 }
 .teatime-footer {
@@ -305,39 +306,39 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 3.7037cqw;
 }
 .teatime-footer .tt-foot-badge {
   background: #2b231d;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1.3889cqw;
   font-weight: 800;
-  padding: 10px 26px;
-  border-radius: 14px;
-  letter-spacing: 2px;
-  margin-bottom: 25px;
+  padding: 0.9259cqw 2.4074cqw;
+  border-radius: 1.2963cqw;
+  letter-spacing: 0.1852cqw;
+  margin-bottom: 2.3148cqw;
 }
 .teatime-footer .tt-quote {
-  font-size: 20px;
+  font-size: 1.8519cqw;
   color: #1a1a1a;
   line-height: 1.6;
   font-weight: 500;
 }
 .teatime-nav {
   position: absolute;
-  bottom: 40px;
-  width: 930px;
-  height: 90px;
+  bottom: 3.7037cqw;
+  width: 86.1111cqw;
+  height: 8.3333cqw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 3.7037cqw;
   z-index: 20;
 }
 .teatime-nav .tt-nav-icon {
   color: var(--tt-muted);
   cursor: pointer;
-  font-size: 30px;
+  font-size: 2.7778cqw;
 }
 .teatime-nav .tt-nav-icon.active {
   color: #2b231d;
@@ -346,38 +347,38 @@
   position: absolute;
   z-index: 2;
   height: auto;
-  font-size: 40px;
+  font-size: 3.7037cqw;
   line-height: 1;
 }
 .teatime-deco-h1 {
-  left: 20px;
-  top: -60px;
-  width: 110px;
+  left: 1.8519cqw;
+  top: -5.5556cqw;
+  width: 10.1852cqw;
   transform: rotate(-12deg);
   opacity: 0.35;
-  font-size: 80px;
+  font-size: 7.4074cqw;
 }
 .teatime-deco-h2 {
-  right: 30px;
-  bottom: -40px;
-  width: 100px;
+  right: 2.7778cqw;
+  bottom: -3.7037cqw;
+  width: 9.2593cqw;
   transform: rotate(15deg);
   opacity: 0.35;
-  font-size: 80px;
+  font-size: 7.4074cqw;
 }
 .teatime-deco-f1 {
-  top: 160px;
-  left: -50px;
-  width: 32px;
+  top: 14.8148cqw;
+  left: -4.6296cqw;
+  width: 2.963cqw;
   color: #2b231d;
-  font-size: 32px;
+  font-size: 2.963cqw;
 }
 .teatime-deco-f2 {
-  top: 20px;
-  right: -70px;
-  width: 32px;
+  top: 1.8519cqw;
+  right: -6.4815cqw;
+  width: 2.963cqw;
   color: #2b231d;
-  font-size: 32px;
+  font-size: 2.963cqw;
 }
 .tt-bg-img1, .tt-bg-img2, .tt-bg-gal1, .tt-bg-gal2, .tt-bg-gal3 {
   background-size: cover;
