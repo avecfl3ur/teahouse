@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
-.teatime-canvas {
+:root {
   --tt-theme: #e8ccd7;
   --tt-bg: #ffffff;
   --tt-dark: #000000;
@@ -15,21 +15,20 @@
   --tt-img-g3: url('https://iili.io/Cf2Hfaf.png');
 }
 
-:where(.teatime-canvas, .teatime-canvas *) {
+.teatime-canvas,
+.teatime-canvas * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 .teatime-box, .teatime-card-v, .teatime-card-h, .teatime-music, .teatime-nav, .teatime-gal-item {
   border: 2px solid var(--tt-muted);
   background: #ffffff;
   border-radius: 30px;
 }
-
 .teatime-canvas {
   width: 750px;
-  height: 1420px;
+  height: 1450px;
   margin: 0 auto;
   position: relative;
   background: var(--tt-bg);
@@ -37,7 +36,6 @@
   flex-shrink: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
-
 .teatime-layout {
   position: absolute;
   width: 100%;
@@ -46,9 +44,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0 35px;
+  padding: 45px 0 25px;
 }
-
 .teatime-top {
   width: 100%;
   display: flex;
@@ -58,9 +55,8 @@
   letter-spacing: 4px;
   color: #1a1a1a;
   padding: 0 70px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-
 .teatime-blur-1, .teatime-blur-2 {
   position: absolute;
   border-radius: 50%;
@@ -68,7 +64,6 @@
   z-index: 1;
   filter: blur(90px);
 }
-
 .teatime-blur-1 {
   width: 520px;
   height: 520px;
@@ -76,7 +71,6 @@
   top: 170px;
   left: -140px;
 }
-
 .teatime-blur-2 {
   width: 450px;
   height: 450px;
@@ -84,56 +78,50 @@
   bottom: 240px;
   right: -100px;
 }
-
 .teatime-header {
   text-align: center;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 0 70px;
   color: var(--tt-dark);
 }
-
 .teatime-header h1 {
   font-size: 80px;
   font-weight: 800;
   letter-spacing: -1px;
   line-height: 1;
 }
-
 .teatime-header .tt-meta {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2px;
   color: #2b231d;
 }
-
 .teatime-header .tt-badge {
   background: #2b231d;
   color: #ffffff;
   padding: 6px 15px;
-  border-radius: 12px;
+  border-radius: 10px;
   font-size: 10px;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
   gap: 6px;
 }
-
 .teatime-main-cards {
   width: 100%;
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   z-index: 10;
   position: relative;
 }
-
 .teatime-card-v {
   width: 305px;
   height: 460px;
@@ -141,7 +129,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .teatime-card-v .tt-frame {
   width: 100%;
   height: 300px;
@@ -149,26 +136,22 @@
   overflow: hidden;
   border: 1px solid #cecece;
 }
-
 .teatime-card-v .tt-details {
-  margin-top: 18px;
+  margin-top: 12px;
   padding-left: 5px;
 }
-
 .teatime-card-v .tt-details h3 {
   font-size: 17px;
   font-weight: 800;
   color: #4a4a4a;
   text-transform: uppercase;
 }
-
 .teatime-card-v .tt-details p {
   font-size: 11px;
   font-weight: 700;
   color: var(--tt-theme);
   margin-top: 4px;
 }
-
 .teatime-card-v .tt-credit {
   font-size: 10px;
   color: var(--tt-muted);
@@ -176,24 +159,21 @@
   text-align: center;
   margin-top: auto;
 }
-
 .teatime-right-group {
   width: 305px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
-
 .teatime-card-h {
   width: 100%;
-  height: 230px;
+  height: 225px;
   overflow: hidden;
 }
-
-.teatime-right-group .teatime-search {
+.teatime-right-group .tt-search {
   width: 100%;
-  height: 45px;
-  border-radius: 22px;
+  height: 40px;
+  border-radius: 20px;
   border: 2px solid var(--tt-muted);
   background: #ffffff;
   display: flex;
@@ -204,38 +184,32 @@
   font-size: 10px;
   font-weight: 500;
 }
-
-.teatime-right-group .teatime-search i {
+.teatime-right-group .tt-search i {
   color: #707070;
 }
-
-.teatime-right-group .teatime-buttons {
+.teatime-right-group .tt-buttons {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
-
 .teatime-right-group .tt-btn {
   flex: 1;
-  height: 48px;
-  border-radius: 24px;
+  height: 40px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
 }
-
 .teatime-right-group .tt-btn.filled {
   background: #cccccc;
   color: #ffffff;
 }
-
 .teatime-right-group .tt-btn.outlined {
   border: 2px solid var(--tt-muted);
   background: #ffffff;
   color: var(--tt-muted);
 }
-
 .teatime-right-group .tt-tags {
   display: flex;
   justify-content: space-between;
@@ -243,36 +217,31 @@
   font-size: 10px;
   font-weight: 800;
 }
-
 .teatime-right-group .tt-tag-1 {
   color: var(--tt-theme);
 }
-
 .teatime-right-group .tt-tag-2 {
   color: var(--tt-muted);
 }
-
 .teatime-music {
   width: 645px;
-  height: 58px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
-  margin-bottom: 20px;
+  padding: 0 20px;
+  margin-bottom: 18px;
   z-index: 10;
 }
-
 .teatime-music .tt-music-info {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 35%;
 }
-
 .teatime-music .tt-music-icon {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background: var(--tt-theme);
   display: flex;
@@ -280,122 +249,105 @@
   justify-content: center;
   color: #ffffff;
 }
-
 .teatime-music .tt-music-title {
   font-size: 11px;
   font-weight: 700;
   color: #4a4a4a;
 }
-
 .teatime-music .tt-music-bar {
   width: 40%;
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .teatime-music .tt-time {
   font-size: 9px;
   font-weight: 600;
   color: var(--tt-muted);
 }
-
 .teatime-music .tt-track {
   flex: 1;
   height: 4px;
   background: #e0e0e0;
   border-radius: 2px;
 }
-
 .teatime-music .tt-fill {
   width: 45%;
   height: 100%;
   background: #4a4a4a;
   border-radius: 2px;
 }
-
 .teatime-music .tt-music-ctrl {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   width: 20%;
   justify-content: flex-end;
   color: #555555;
   cursor: pointer;
-  font-size: 12px;
 }
-
 .teatime-gallery {
   width: 645px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   z-index: 10;
 }
-
 .teatime-gal-item {
   width: 200px;
-  height: 135px;
+  height: 115px;
   border-radius: 20px;
   overflow: hidden;
 }
-
 .teatime-footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   z-index: 10;
 }
-
 .teatime-footer .tt-foot-badge {
   background: #2b231d;
   color: #ffffff;
   font-size: 10px;
   font-weight: 800;
-  padding: 6px 18px;
+  padding: 5px 14px;
   border-radius: 10px;
   letter-spacing: 1px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
-
 .teatime-footer .tt-quote {
-  font-size: 13px;
+  font-size: 12px;
   color: #1a1a1a;
   line-height: 1.5;
   font-weight: 500;
 }
-
 .teatime-nav {
   position: relative;
   width: 645px;
-  height: 58px;
+  height: 52px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0 28px;
   z-index: 20;
 }
-
 .teatime-nav .tt-nav-icon {
   color: var(--tt-muted);
   cursor: pointer;
   font-size: 18px;
 }
-
 .teatime-nav .tt-nav-icon.active {
   color: #2b231d;
 }
-
 .teatime-deco-h1, .teatime-deco-h2, .teatime-deco-f1, .teatime-deco-f2 {
   position: absolute;
   z-index: 2;
   height: auto;
   line-height: 1;
 }
-
 .teatime-deco-h1 {
   left: 15px;
   top: -40px;
@@ -403,7 +355,6 @@
   opacity: 0.35;
   font-size: 55px;
 }
-
 .teatime-deco-h2 {
   right: 20px;
   bottom: -30px;
@@ -411,44 +362,36 @@
   opacity: 0.35;
   font-size: 55px;
 }
-
 .teatime-deco-f1 {
   top: 110px;
   left: -35px;
   color: #2b231d;
   font-size: 22px;
 }
-
 .teatime-deco-f2 {
   top: 15px;
   right: -50px;
   color: #2b231d;
   font-size: 22px;
 }
-
 .tt-bg-img1, .tt-bg-img2, .tt-bg-gal1, .tt-bg-gal2, .tt-bg-gal3 {
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
 }
-
 .tt-bg-img1 {
   background-image: var(--tt-img-1);
 }
-
 .tt-bg-img2 {
   background-image: var(--tt-img-2);
 }
-
 .tt-bg-gal1 {
   background-image: var(--tt-img-g1);
 }
-
 .tt-bg-gal2 {
   background-image: var(--tt-img-g2);
 }
-
 .tt-bg-gal3 {
   background-image: var(--tt-img-g3);
 }
