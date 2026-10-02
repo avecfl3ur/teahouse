@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
 
-.ptea-canvas {
+:root {
   --ptea-bg: #e8ccd7;
   --ptea-pearl: #fff8fb;
   --ptea-ink: #2b1827;
